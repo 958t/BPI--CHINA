@@ -1,0 +1,77 @@
+.RotationChart {
+    margin: 50px;
+}
+
+.card {
+    margin-left: 34px;
+    margin-bottom: 90px;
+}
+
+.test {
+    width: 200px;
+    height: 20px;
+}
+
+.modal-dialog {
+    max-width: 400px;
+    /* 调整大小 */
+    margin-right: auto;
+    /* 窗口右对齐 */
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        /* 在大屏幕上调整大小 */
+    }
+}
+
+.caed1 {
+    cursor: pointer;
+}
+
+.caed1:hover {
+
+}
+
+.caed1 .container .row .col-md-4 .card {
+    width: 312.4px;
+    height: 331px;
+}
+
+.members-title[data-v-5daf942d] {
+    text-align: center;
+    margin: 12px auto;
+    width: 22vw;
+    padding: 20px;
+    border-top: 2px solid #deddde;
+    border-bottom: 2px solid #deddde;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.members-title {
+    font-family: Title_font,serif!important;
+}
+
+.mengliao {
+    margin: 0 auto;
+}
+
+
+
+.wangyingming {
+    display: inline;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+}
+
+.headerimg img {
+    width: 100%;
+    height: 40%;
+}

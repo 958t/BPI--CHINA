@@ -1,0 +1,697 @@
+{% extends "layout.html" %} {% block page_content %}
+
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<div class="header">
+</div>
+<!-- Team团队轮播图--开始 -->
+<div class="RotationChart">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static\team\team1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="static\team\team3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- Team团队轮播图--结束 -->
+<h3 data-v-5daf942d="" data-v-acc77a88="" class="members-title">PI</h3>
+<div class="row">
+
+  <!-- 人物卡片1 -->
+  <div class="caed1">
+    <div class="container">
+<!--      老师领导-->
+      <div class="row">
+        <!-- 王瑞丽1 -->
+        <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#wangruili">
+           <div class="shadow bg-body-tertiary rounded">
+             <img src="static\team\teacher.jpg" width="312.4px" height="331px" class="card-img-top" alt="Person Image">
+             <div class="card-body">
+               <h5 class="card-title">Wang Ruili</h5>
+               <p class="card-text">Team leader</p>
+             </div>
+           </div>
+          </div>
+        </div>
+        <!-- 陈亮3 -->
+        <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#chenliang">
+            <div class="shadow  bg-body-tertiary rounded">
+            <img src="static\team\teacher2.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+            <div class="card-body">
+              <h5 class="card-title">Chen Liang</h5>
+              <p class="card-text">Team leader</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- 王翠翠4 -->
+        <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#wangcuicui">
+            <div class="shadow  bg-body-tertiary rounded">
+            <img src="static\team\wangcuicui.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+            <div class="card-body">
+              <h5 class="card-title">Wang Cuicui</h5>
+              <p class="card-text">Team leader</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      <!--学生领导-->
+        <h3 data-v-5daf942d="" data-v-acc77a88="" class="members-title">Student leader</h3>
+        <div class="row">
+          <!-- 梁梦瑶 -->
+          <div class="col-md-4 mengliao">
+            <div class="card" data-toggle="modal" data-target="#personModal2">
+              <div class="shadow   bg-body-tertiary rounded">
+              <img src="static\team\duizhang.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+              <div class="card-body">
+                <h5 class="card-title">Liang Mengyao</h5>
+                <p class="card-text">Student Captain</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- 韩越 -->
+          <div class="col-md-4 mengliao">
+            <div class="card" data-toggle="modal" data-target="#hanyue">
+              <div class="shadow   bg-body-tertiary rounded">
+              <img src="static\team\hanyue.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+              <div class="card-body">
+                <h5 class="card-title">Han Yue</h5>
+                <p class="card-text">Student Captain</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    实验组-->
+    <h3 data-v-5daf942d="" data-v-acc77a88="" class="members-title shiyanzuh3">Experimental Group</h3>
+    <div class="row">
+      <!-- Feng Haoning -->
+      <div class="col-md-4 ">
+        <div class="card" data-toggle="modal" data-target="#fenghaoning">
+          <div class="shadow   bg-body-tertiary rounded">
+          <img src="static\team\fenghaoning.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Feng Haoning</h5>
+            <p class="card-text">GROUP:Wet Lab</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Li Siyv -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#lisiyu">
+          <div class="shadow   bg-body-tertiary rounded">
+          <img src="static\team\lisiyu.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Li Siyv</h5>
+            <p class="card-text">GROUP:Wet Lab</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ren Zexu -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#renzexu">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\RenZexu.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">RenZexu</h5>
+            <p class="card-text">GROUP:Wet Lab</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Yang suxia -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#Yangsuxia">
+          <div class="shadow  bg-body-tertiary rounded">
+          <img src="static\team\Yangsuxia.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Yang suxia</h5>
+            <p class="card-text">GROUP:Wet Lab</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Zhang Xuabxin -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#ZhangXuabxin">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\ZhangXuabxin.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Zhang Xuabxin</h5>
+            <p class="card-text">GROUP:Wet Lab</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hao Lili -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#HaoLili">
+          <div class="shadow  bg-body-tertiary rounded">
+          <img src="static\team\Haolili.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Hao Lili</h5>
+            <p class="card-text">GROUP:Wet Lab</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hu Simeng -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#HuSimeng">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\HuSimeng.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Hu Simeng</h5>
+            <p class="card-text">GROUP:Art and WiKi</p>
+          </div>
+          </div>
+        </div>
+      </div>
+<!--      Wang Hao-->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#WangHao">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\WangHao.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Wang Hao</h5>
+            <p class="card-text">GROUP:Wet Lab</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--      Wang Yingming    -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#wangyingming">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\wangyingming.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Wang Yingming</h5>
+            <p class="card-text">GROUP:Art and WiKi</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--     Gao Di   -->
+      <div class="col-md-4">
+        <div class="card wangyingming" data-toggle="modal" data-target="#wangyingming">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\gaodi.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Gao Di</h5>
+            <p class="card-text">GROUP:Art and WiKi</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 data-v-5daf942d="" data-v-acc77a88="" class="members-title">Wiki & Art Group</h3>
+    <div class="row">
+      <!--     Gao Di   -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#pjw">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\pjw.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Peng Junwei</h5>
+            <p class="card-text">GROUP:Art and WiKi</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--     Gao Di   -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#wzy">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\wangziyang.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Wang Ziyang</h5>
+            <p class="card-text">GROUP:Art and WiKi</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--     Gao Di   -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#wbc">
+          <div class="shadow bg-body-tertiary rounded">
+          <img src="static\team\wangbochen.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+          <div class="card-body">
+            <h5 class="card-title">Wang Bochen</h5>
+            <p class="card-text">GROUP:Art and WiKi</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--建模-->
+      <h3 data-v-5daf942d="" data-v-acc77a88="" class="members-title">Model Group</h3>
+      <div class="row">
+        <!-- Shi Jingyang -->
+        <div class="col-md-4 mengliao">
+          <div class="card" data-toggle="modal" data-target="#shijiangyang">
+            <div class="shadow bg-body-tertiary rounded">
+            <img src="static\team\shijingyang.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+            <div class="card-body">
+              <h5 class="card-title">Shi Jingyang</h5>
+              <p class="card-text">GROUP:Model</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- zhang -->
+        <div class="col-md-4 mengliao">
+          <div class="card" data-toggle="modal" data-target="#zhangxiyv">
+            <div class="shadow bg-body-tertiary rounded">
+            <img src="static\team\zhangxiyv.jpg" width="186px" height="331px" class="card-img-top" alt="Person Image">
+            <div class="card-body">
+              <h5 class="card-title">Zhang Xiyv</h5>
+              <p class="card-text">GROUP:Model</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 王瑞丽 1-->
+    <div class="modal fade" id="wangruili" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Wang Ruili-Team leader</p>
+            <p>Wang Ruili,As a technical backbone,she has participated in and completed more than 10 projects such as the National 863 Young Scientist Topic, the National Key Research and Development Pathogen Special Project, and the Beijing "Science and Technology New Star" Program.At present, he has published more than 4 SCI and EI papers, declared 4 invention patents and authorized 2 projects. In recent years, he has guided students to participate in various skills competitions and innovation and entrepreneurship competitions, and won 1 gold medal of Beijing Challenge Cup, 1 second prize and 3 third prizes of Beijing "Internet +" College Student Innovation and Entrepreneurship Competition.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 陈亮 2-->
+    <div class="modal fade" id="chenliang" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Chen Liang-Team leader</p>
+            <p>Graduated from Beijing University of Chemical Technology with a doctorate degree in chemical engineering and technology, he is a senior engineer in the field of measurement control and instrumentation of the Chinese Instrumentation Society, a senior technician of chemical inspectors, a senior technician of agricultural products and food inspectors, a coach (senior) of the International Entrepreneurship Association, a lecturer of KAB entrepreneurship education (China), an academic leader of Beijing Electronic Science and Technology Vocational College, a winner of the Youth May Fourth Medal, and a top talent in Beijing. He serves as the standing director of the Industry-Education Integration Professional Committee of the China Education Development Strategy Society, the standing director of Beijing Modern Manufacturing Vocational Education Group, the Fine Chemical Professional Committee of the National Chemical Industry Vocational Skill Appraisal Technical Committee and the expert of the Professional Construction Expert Committee of the National Inspection Testing and Certification Vocational Education Group.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 王翠翠 2-->
+    <div class="modal fade" id="wangcuicui" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Wang Cuicui  (Higher Vocational Education) -Team leader</p>
+            <p>Lecturer of Beijing Polytechnic, Director of Class 2 of Class 2022 Pharmaceutical Biotechnology.
+              She is mainly responsible for the teaching of 《Biochemistry》、《Gene Manipulation Technology》and《Microbial Technology》.She is active in genetics and plant molecular genetics research fields. She has published 7 scientific papers, participated in the publication of 1 book and applied for 2 invention patents. She hosts two school-level research projects, and participates in 1 project of Beijing Municipal Education Commission.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    学生领导-->
+    <!--梁梦瑶 -->
+    <div class="modal fade" id="personModal2" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Liang Mengyao-Student leader</p>
+            <p>GROUP:Wet lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:Practice makes perfect</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--韩越 -->
+    <div class="modal fade" id="hanyue" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Han yue-Student leader</p>
+            <p>GROUP:Art and WiKi</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:Thus ends the reign of the everlasting night</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="fenghaoning" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Feng Haoning-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            MOTTO:Man does not offend me, I do not offend
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="lisiyu" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Li Siyv-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:The door is cold, and the newcomers need to be sincere.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="renzexu" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Ren Zexu-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:Better teach me to be negative than teach others to be negative</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Yangsuxia" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Yang suxia-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:There's no making without breaking.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="ZhangXuabxin" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Zhang Xuabxin-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:There is a Crack in Everything, That's How the Light Gets in.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="HaoLili" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Hao Lili-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:I am willing to enjoy life and create my own future</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="HuSimeng" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Hu Simeng-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:Staying the course is victory</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="WangHao" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Wang Hao-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:May the future be prosperous, and the return will still be a teenager.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="wangyingming" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Wang Yingming-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:Efforts and results are directly proportional</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="GaoDi" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Gao Di-Wet Lab</p>
+            <p>GROUP:Wet Lab</p>
+            <p>MAJOR:Biology</p>
+            <p>MOTTO:Three provinces and my body</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="pjw" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Peng Junwei-Art and WiKi</p>
+            <p>GROUP:Art and WiKi</p>
+            <p>MAJOR:Telecom</p>
+            <p>MOTTO:The ideal of life is to seek the truth</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="wzy" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Wang Ziyang-Art and WiKi</p>
+            <p>GROUP:Art and WiKi</p>
+            <p>MAJOR:Telecom</p>
+            <p>MOTTO:Forge ahead and never forget our original intention</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="wbc" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Wang Bochen-Art and WiKi</p>
+            <p>GROUP:Art and WiKi</p>
+            <p>MAJOR:Telecom</p>
+            <p>MOTTO:Struggle for a lifetime</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="shijiangyang" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Shi Jingyang-Model</p>
+            <p>GROUP:Model</p>
+            <p>MAJOR:Telecom</p>
+            <p>MOTTO:Things are often contrary to people, and things are always man-made.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="zhangxiyv" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="personModalLabel">Character Introduction</h5>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Zhang Xiyv-Model</p>
+            <p>GROUP:Model</p>
+            <p>MAJOR:Telecom</p>
+            <p>MOTTO:Tianxingjian, a gentleman with self-improvement</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
+
+{% endblock %}
