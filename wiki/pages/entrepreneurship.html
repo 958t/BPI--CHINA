@@ -4,9 +4,14 @@
 {% block lead %}The entrepreneurship prize recognizes exceptional effort to build a business case and commercialize an iGEM project.{% endblock %}
 
 {% block page_content %}
-
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+</head>
 <div class="row mt-4">
   <div class="col">
+    <div class="safety-hd">
+      <img src="static/entrepreneurship/entrepreneurship-hd.jpg" alt="">
+    </div>
     <div class="bd-callout bd-callout-info">
       <h4>Best Supporting Entrepreneurship</h4>
       <p>The Best Supporting Entrepreneurship award recognizes exceptional effort to build a business case and commercialize an iGEM project. This award is open to all teams to show that entrepreneurship is something all teams can aspire to do with their project. This award can go to an new project, or to a previous project that a team aimed to commercialize. Have you filed a provisional patent on your project/device/process? Have you raised money to build and ship products? Have you pitched your idea to investors and received money? As always in iGEM, the aim is to impress the judges!</p>

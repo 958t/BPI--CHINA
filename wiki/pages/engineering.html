@@ -4,16 +4,66 @@
 {% block lead %}Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle.{% endblock %}
 
 {% block page_content %}
-
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+</head>
 <div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #1</h4>
-      <p>Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle. This achievement should be distinct from your Contribution for Bronze.<p>
-      <p>If you plan to show engineering success by creating a new Part that has been shown to work as expected, you must document your contribution on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
-    </div>
+  <div class="safety-hd">
+    <img src="static/engineering/engineering-hd.jpg" alt="">
+  </div>
+  <div class="engineering-bd">
+    <h3>Introduction</h3>
+    <p>MicroRNAs (miRNAs) are non-coding, short, single-stranded RNAs. They play a key role in the genetic regulation of many biological processes. Their aberrant expression is always accompanied by a range of human diseases, including cancer, viral infections, and tumors. Therefore, accurate and sensitive in vitro diagnosis of miRNAs are valuable for disease prevention and treatment.
+    miRNA is a class of short non-coding RNA molecules and its abnormal expression is closely related to a variety of diseases. Therefore, achieving the detection of miRNA for clinical diagnosis is of great significance. However, due to the low abundance and strong homology of miRNA, there is a certain level of testing required for its high sensitivity and high specificity detection. In order to achieve highly sensitive detection, researchers have proposed many nucleic acid amplification techniques, such as RCA, CHA, HCR, etc., of which HCR technology, due to its simple operation, mild reaction conditions, and other advantages, has been favored by the majority of researchers. The concept of HCR was first proposed by Dirks and Pierce in 2004, in which the target molecule triggers the alternating ring-opening self-assembly of two DNA hp into linear double-stranded DNA nanostructures containing a large number of repeating units, with the advantages of thermostability, enzyme-free, and high amplification efficiency.
+    </p>
+    <h3>How to design plasmids</h3>
+    <p>We chose the T7 promoter and T7 RNA polymerase because they have strong translational ability and are usually used for protein expression. E. coli expresses our target protein pET-Cas12a. For this purpose, we designed the DNA sequence of pET-Cas12a, inserted it into the pET-28a vector, and transformed the recombinant plasmid into E. coli BL21(DE3) for protein expression.
+    </p>
+    <h3>How to construct plasmids</h3>
+    <p>To construct our plasmid, We asked the company to synthesize DNA fragments and insert the gene for LbCas12a into the pET-28a vector. The constructed plasmid was contained in an E. coli strain, which we inoculated by streaking on LB solid plates containing the appropriate antibiotics and incubated overnight at 37°C (Figure 1).
+      Figure 1 BL21 colonies</p>
+    <h5>How to Transform Plasmids</h5>
+    <p>Plasmid transformation (on ice)</p>
+    <p>Ⅰ. Preparation</p>
+    <p>1. The centrifuge tube containing the plasmid was centrifuged at 1300r for 5min;</p>
+    <p>2. Plasmids were lysed with ultrapure ddH2O;</p>
+    <p>3. Take 0.5μL of the integration solution into the tube;</p>
+    <p>4. 50μL receptive cell BL21 was added into the tube and wait for 1min 30s in the tube.</p>
+    <p>II. Ice baths</p>
+    <p></p>1, ice bath for 30min, with constant temperature water bath at 42℃, heat shock 90s;</p>
+    <p>2. Add 800 μL LB liquid medium（Kan+） to the centrifuge tube (no resistance).</p>
+    <p>III. Coat the plate</p>
+    <p>Leave for 30 minutes The LB liquid medium (150μL) was put into the constant temperature medium containing resistance selective medium at 37℃. After the bacteria solution was completely absorbed, the Petri dish was inverted and incubated at 37℃ for 12-16 hours.</p>
+    <p>IV. Inoculating colonies</p>
+    <p>1. Dip single colonies on the cultivated plate with the tip of a pipet gun;</p>
+    <p>2. Put into a tube with 1000μL medium (liquid) and culture with a shaker;</p>
+    <p>3. 4 tubes of bacteria (two plates, one picked twice) were inserted into the four tubes with the tip of a gun, incubated at 75r at 37 ° C on the shaker, and then single colonies were picked.</p>
+    <p>V. Directly add 150μL of bacterial solution to 150 ML LB liquid medium (Kan+) at 100:1. Cultures were incubated overnight at 75r at 37° C on a shaker.</p>
+    <h3>How to Test PET-Cas12a</h3>
+    <p>Protein expression and purification:
+    <p>The recombinant plasmid pET-Cas12a was transferred into the expression strain BL21 sensory state, and after the colonies were identified correctly, prokaryotic expression was performed. (Figure 2).</p>
+    <p>1. BL21 colonies containing the correctly identified recombinant plasmid pET-Cas12a were inoculated into 5 mL LB liquid medium（Kan+）at 37 ℃, 200 rpm, for shock culture for 12-16 h.</p>
+    <p>2. Absorb 2 mL of the bacterial solution cultured overnight into 200 mL of LB liquid medium（Kan+）, and culture with shaking at 37 ℃, 200 rpm, until the bacterial solution is about OD600 to 0.5, about 2-3 h.</p>
+    <p>3. 1.5 mL bacterial solution was aspirated as a whole cell control before IPTG induction and stored at -20 ° C.</p>
+    <p>4. Add IPTG until the final concentration is 0.5mmol /L, 1mmol /L, and 1.5mmol /L, respectively, at 37 ℃ and 150 rpm, and oscillate for 3-6 h.</p>
+    <p>5. 1.5 mL of bacterial solution was aspirated as a whole cell control after IPTG induction and stored at -20 ° C.</p>
+    <p>6. The rest of the bacteria were centrifuged at 5000 rpm and 4 ° C for 5 min, and the bacteria were collected. After the supernatant was discarded, the bacteria were repeatedly frozen and thawed 3 to 4 times with liquid nitrogen (if liquid nitrogen was not available, the bacteria were washed twice with PBS, resuspended with 1ml lysate, and added with a final concentration of 1mmol/L PMSF solution. Crushed on ice with an ultrasonic crusher).</p>
+    <p>7. The bacteria were resuspended in 20 mL of ice-cold PBS for precipitation, and then crushed by an ultrasonic crusher on ice until the bacterial solution was translucent to avoid bubbles, and ultrasonic crushing was carried out on ice.</p>
+    <p>8. After centrifugation at 10,000 rpm at 4 ℃ for 10 min, the supernatant and precipitate were aspirated and subjected to SDS-PAGE to observe the expression and dissolution of GST fusion protein. If the expression of the pET-Cas12a fusion protein is high and present in the supernatant, proceed to the next step of purification of the pET-Cas12a using nickel column.</p>
+    <img src="static/engineering/1.png" alt="">
+    <p>Figure 1. Results of SDS-PAGE electrophoresis condensation and HCR amplification reaction electrophoresis of Cas12a protein. A. as12a protein has a size of 130kDa. The results of SDS-PAGE electrophoresis indicated that Cas12a protein was present in our solution collected at 130kDa and was not present in nonspecific protein impurities. Thus, Cas12a protein was expressed and purified with high quality. B. lane 1： H1 (1 µM); lane 2: H2 (1 µM); lane 3:1 µM H1+ 1 µM H2; lane 4:1 µM H1+ 1 µM H2+ 50 nM miR; lane 5:1 µM H1+ 1 µM H2+ 100 nM miR; lane 6:1 µM H1+ 1 µM H2+ 200 nM miR; lane 7: 1 µM H1+ 1 µM H2+ 500 nM miR-; lane 8:1 µM H1+ 1 µM H2+ 1000 nM miR.
+      Then, we made a standard curve (Fig. 3) y=0.0075x+0.1205 R²=0.9868 of the obtained data of protein concentration and absorbance in response to its steady growth changes.
+    </p>
+    <img src="static/engineering/2.png" alt="">
+    <p>Figure 2. Standard linearity of the BCA method used to calculate the concentration of protein
+      Through the curve values, we measured the absorbance of Cas12a as 0.2276 (L/ (g.cm) and the protein concentration (μ g /ml). This result indicates that we obtained a sufficient concentration of Cas12a protein.
+    </p>
+    <h3>CRISPR-CAS12a protein cleavage assay</h3>
+    <p>In order to verify whether our purified crRNA-Cas12a can function as a regular reverse cleavage, we conducted relevant experiments.
+    The lateral chromatographic test strip used in this method has two strips, the lower quality control line and the upper detection line. The quality control line was coated with avidin (SA), the detection line was coated with sheep anti-mouse secondary antibody, and the colloidal gold was labeled with anti-FAM /FITC monoclonal antibody. The complete reporter molecule (Biotin and FAM labeled at both ends) could capture all the colloidal gold at the quality control line. When a reporter molecule was cut off by the Cas enzyme, the colloidal gold bound to the cut fragment could not be captured by the quality control line, forming a detection line. The Cas enzyme was activated by the detection line, and the positive or negative results of the test were further judged, and the constructive opinions of the patients were given.
+    </p>
+    <img src="static/engineering/3.png" alt="">
+    <p>Figure 3. Lateral chromatographic test strip test results. A. Negative. B. Positive. Negative:·T line does not show color and is judged negative, indicating that the reporter has not been Cas. Enzyme cleavage, Cas. enzyme is not activated; Positive :T·line color, judged as positive, indicating that there is a nucleic acid probe cut by Cas. enzyme, cas enzymes are activated;</p>
   </div>
 </div>
 

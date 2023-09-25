@@ -4,47 +4,84 @@
 {% block lead %}Describe all the safety issues of your project.{% endblock %}
 
 {% block page_content %}
-
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+</head>
 <div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Safety and Security Award</h4>
-      <p>Synthetic biology will need to be used safely and securely if local people are to solve local problems all around the world. The Safety and Security Committee is challenging teams to apply biological engineering approaches to manage risks associated with synthetic biology. Can you take the next step in incremental progress towards knowledge, understanding, and tools that will make the use of synthetic biology safer and more secure?</p>
-      <p>To compete for the Safety and Security award, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more information.</p>
+  <div class="safety-hd">
+    <img src="static/safety/safety-hd.jpg" alt="">
+  </div>
+</div>
+
+<div class="row mt-4 laboratory overview">
+  <div class="laboratrory-hd">
+    <img src="static/safety/laboratory.png" class="safety-hd-img" width="50px" height="50px" alt="">
+    <h2 class="safety-hd-h4">laboratory</h2>
+  </div>
+  <p class="laboratory-bd">&nbsp;&nbsp;&nbsp;&nbsp;BPI-CHINA always prioritizes the safety of experiments. On this page, we will demonstrate how we continuously implemented various measures to ensure the safety and security of all related parts, from experiments to future application.
+    Just like our predecessors, before starting our wet lab work, all members of BPI-CHINA wet team members have received laboratory safety training from our experimental director. Our project were carried out mainly in the laboratory classified as biosafety level 1. The equipment used in the laboratory, work space, reagent management are all in accordance with the relevant rules of iGEM safety.
+  </p>
+  <ul class="laboratory-img">
+    <li>
+      <img src="static/safety/laboratory-1.jpg" alt="">
+    </li>
+    <li>
+      <img src="static/safety/laboratory-2.jpg" alt="">
+    </li>
+    <li>
+      <img src="static/safety/laboratory-3.jpg" alt="">
+    </li>
+    <li>
+      <img src="static/safety/laboratory-4.jpg" alt="">
+    </li>
+    <li>
+      <img src="static/safety/laboratory-5.jpg" alt="">
+
+    </li>
+  </ul>
+  <p class="laboratory-bd-p">The picture shows the safety items found in our biotechnology laboratory.</p>
+</div>
+<div class="row mt-4 teamsafety overview">
+  <div class="teamsafety-hd">
+    <img src="static/safety/team.png" width="50px" height="50px" alt="">
+    <h2>Team Safety</h2>
+  </div>
+  <ul>
+    <li>  Always know the correct procedure for the disposal of lab materials.</li>
+    <li>  Fully consider the experimental process, and make full preparations.</li>
+    <li>  Safe and reasonable use of water and electricity, close as needed.</li>
+    <li>  Keep the lab tidy and hygienic.</li>
+    <li>  Tie back loose or long hair.</li>
+    <li>  Wear long-sleeved lab coats in and out of the lab.</li>
+    <li>  Always use gloves and splash-proof goggles.</li>
+    <li>  All contaminated waste must be disinfected before treatment.</li>
+    <li>  Do not carry all items in the laboratory outside.</li>
+    <li>  Do not eat or drink when in the lab area.</li>
+    <li>  Wash hands coming in and out of the laboratory.</li>
+    <li>  Take photos and supervise every time the laboratory is cleaned.</li>
+  </ul>
+  <img src="static/safety/team2.jpg" alt="">
+</div>
+<div class="row mt-4 overview">
+  <div class="safety-col">
+    <h2 class="sf-h2">Project Safety</h2>
+    <div>
+      <img src="static/safety/1.png" class="safety-hd-img" width="50px" height="50px" alt="">
+      <h2 class="safety-hd-h4">overview</h2>
     </div>
+    <p class="safety-bd">&nbsp;&nbsp;&nbsp;&nbsp;Our project has developed test strips that are easy to prevent, detect myocardial infarction diseases. Specifically, our project modifies gene fragments with different hairpin structures on colloidal gold, targets different miRNAs, binds to miRNAs and initiates HCR thermostatic amplification reactions.Meanwhile, the reverse cleavage function of CRISPR technology was used to release the fluorescence signal and complete the miRNA detection. This project will combine colloidal gold technology, HCR thermostatic amplification technology and CRISPR reverse cleavage to establish a specific method for detecting miRNAs, and predict whether patients have myocardial infarction according to the test results. </p>
+  <div class="safety-hardware">
+    <img src="static/safety/hardware.png" width="50px" height="50px" alt="">
+    <h2>hardware</h2>
   </div>
+  </div>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;Regularly inspect, repair, and replace air conditioning, professional equipment, and other equipment. Every time we use an instrument, we are registered and trained by professionals.</p>
 </div>
-
-<div class="row mt-4">
-  <div class="col">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <p>On this page of your wiki, you should write about how you are addressing any safety issues in your project. The wiki is a place where you can go beyond the questions on the safety forms, and write about whatever safety topics are most interesting in your project. (You do not need to copy your safety forms onto this wiki page.)</p>
-    <div class="bd-callout bd-callout-info">
-      <p>Please visit the <a href="https://responsibility.igem.org/safety-policies/introduction">Safety Policies page</a> to find this year's safety requirements & deadlines, and to learn about safe & responsible research in iGEM.</p>
-    </div>
+<div class="row mt-4 human overview">
+  <div>
+    <img src="static/safety/hardware.png" width="50px" height="50px" alt="">
+    <h2>Human Practice and Education</h2>
   </div>
+  <p>All survey participants have sought their consent and received positive recognition and support.</p>
 </div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Safe Project Design</h2>
-    <hr>
-    <p>Does your project include any safety features? Have you made certain decisions about the design to reduce risks? Write about them here! For example:</p>
-    <ul>
-      <li>Choosing a non-pathogenic chassis</li>
-      <li>Choosing parts that will not harm humans / animals / plants</li>
-      <li>Substituting safer materials for dangerous materials in a proof-of-concept experiment</li>
-      <li>Including an "induced lethality" or "kill-switch" device</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Safe Lab Work</h2>
-    <hr>
-    <p>What safety procedures do you use every day in the lab? Did you perform any unusual experiments, or face any unusual safety issues? Write about them here!</p>
-  </div>
-</div>
-
 {% endblock %}

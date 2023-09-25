@@ -6,36 +6,88 @@
 {% block page_content %}
 
 <div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Model</h4>
-      <p>Models and computer simulations provide a great way to describe the functioning and operation of BioBrick Parts and Devices. Synthetic biology is an engineering discipline and part of engineering is simulation and modeling to determine system behavior before building your design. Designing and simulating can be iterated many times in a computer before moving to the lab. This award is for teams who build a model of their system and use it to inform system design or simulate expected behavior before or in conjunction with experiments in the wetlab.</p>
-      <p>To compete for the Best Model prize, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more information.</p>
-    </div>
+  <div class="model-hd">
+    <h4>Research on miRNA detection method based on thermostatic amplification technology and paper chromatography technology
+      Abstract
+    </h4>
+    <p>In this paper, the best experimental data were obtained from the study of miRNA detection. In the thermostatic amplification reaction, the amplification temperature was optimal at 40°C, and the shortest reaction time was 30 minutes at a product concentration of 1000 ng/μL and a miRNA concentration of 10 nM.
+      The shortest time required for the reaction was 45 minutes for sample sizes up to 1 μg in the Cas12a cutting study.
+      Based on the conclusions of this study, proposals for rationalisation are made to improve the experimental process of miRNA detection methods.
+      Keywords: fitted model, thermostatic amplification reaction, Cas12a cleavage.
+    </p>
+    <h4>Restatement of the problem</h4>
+    <p>In recent years, myocardial infarction has been occurring frequently and is obviously on the rise, but the detection means of myocardial infarction on the market are expensive and time-consuming, in order to prevent myocardial infarction and detect patients with the disease as early as possible, we use the thermostatic amplification technology and Cas12a cutting into the detection of myocardial infarction.
+    For this study, in order to ensure the efficiency of the experiment, we need to obtain the optimal ratio of reactants.
+    Question 1: Optimal reactant ratios in thermostatic amplification reaction studies.
+      Question 2: Optimal reactant ratios in Cas12a cutting studies.</p>
+    <h4>Data sources and their analysis</h4>
+    <p>Data sources</p>
+    <p>In the study of thermostatic amplification technology, H1 concentration, H2 concentration, amplification temperature, reaction time, and amplification product concentration was selected. Cas12a Protein concentration, crRNA concentration, the concentration of the reporters, reaction temperature, sample size, and reaction time was selected for Cas12a cleavage study.
+    In order to improve the experimental efficiency and accuracy of the results, data comparisons were made through the above experimental data to reflect the changing law of the experimental process, to control the experimental variables, and to derive the optimal ratio of the reactants.
+      Establishing a data analysis model for the experiment is of great importance to process of the experimental data.</p>
+    <h4>Model factor assumptions</h4>
+    <p>Amplification temperature and miRNA concentration was assumed to have an effect on the thermostatic amplification reaction.
+      It is assumed that sample size has an effect on Cas12a cutting experiments.</p>
+    <h4>Modelling and solving</h4>
+    <p>Question 1: Optimal reactant ratios in thermostatic amplification reaction studies.
+    The following table was obtained by experimentally obtaining the data and the fitted model were built using Python to plot the graphs.
+    </p>
+  <table>
+    <tr>
+      <td>
+        <h4>H1</h4>
+      </td>
+      <td>
+        <h4>H2</h4>
+      </td>
+      <td>
+        <h4>miRN</h4>
+        <h4>A</h4>
+      </td>
+    </tr>
+    <tr>
+      <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+      <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+      <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+       <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+       <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+       <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+       <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+       <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+       <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+    <tr>
+       <td> <p>100nM</p></td>
+      <td> <p>100nM</p></td>
+    </tr>
+  </table>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Overview</h2>
-    <hr>
-    <p>Mathematical models and computer simulations provide a great way to describe the function and operation of Parts and Devices. Synthetic Biology is an engineering discipline, and part of engineering is simulation and modeling to determine the behavior of your design before you build it. Designing and simulating can be iterated many times in a computer before moving to the lab.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="http://2018.igem.org/Team:GreatBay_China/Model">2018 GreatBay China</a></li>
-      <li><a href="http://2018.igem.org/Team:Leiden/Model">2018 Leiden</a></li>
-      <li><a href="https://2019.igem.org/Team:IISER_Kolkata/Model">2019 IISER Kolkata</a></li>
-      <li><a href="https://2019.igem.org/Team:Exeter/Model">2019 Exeter</a></li>
-      <li><a href="https://2019.igem.org/Team:Mingdao/Model">2019 Mingdao</a></li>
-      <li><a href="https://2020.igem.org/Team:Harvard/Model">2020 Harvard</a></li>
-      <li><a href="https://2020.igem.org/Team:Leiden/Model">2020 Leiden</a></li>
-    </ul>
-  </div>
-</div>
 
 {% endblock %}

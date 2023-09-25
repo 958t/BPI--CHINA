@@ -4,54 +4,27 @@
 {% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
 
 {% block page_content %}
-
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+</head>
 <div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
-    </div>
+  <div class="safety-hd">
+    <img src="static/description/description.jpg" alt="">
+  </div>
+  <div class="description-bd">
+    <img src="static/description/1.png" width="100px" height="100px" alt="" >
+    <h2>Background and inspiration</h2>
+  </div>
+  <div class="safety-bd">
+    <img src="static/description/2.png" width="55px" height="48px" alt="">
+    <p>Acute myocardial infarction is a common disease in Europe and the United States. In China, the number of people suffering from the disease has increased significantly in recent years, with at least 500,000 new cases and at least 2 million existing patients each year. Despite the high prevalence, commercially available tests are expensive and time-consuming. Worldwide, coronary heart disease causes about 170,000 deaths per year. China has shown a significant increase in mortality in recent years [1]. Acute myocardial infarction (AMI) has many negative effects on humans, along with complications, leading to arrhythmias, heart rupture, heart failure, etc., and death if the symptoms are severe; to date, there are many deaths due to acute myocardial infarction disease, with a lethality rate of about 20%. The early stages of the disease, if left untreated, pose a serious threat to the health and life of the patient.</p>
+  </div>
+
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
-  </div>
-</div>
+
+
 
 {% endblock %}

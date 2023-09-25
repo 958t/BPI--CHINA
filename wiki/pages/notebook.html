@@ -4,8 +4,13 @@
 {% block lead %}Document the dates you worked on your project. This should be a detailed account of the work done each day for your project.{% endblock %}
 
 {% block page_content %}
-
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+</head>
 <div class="row mt-4">
+  <div class="safety-hd">
+    <img src="static/notebook/notebook-hd.jpg" alt="">
+  </div>
   <div class="col-lg-8">
     <h2>What should this page contain?</h2>
     <hr>

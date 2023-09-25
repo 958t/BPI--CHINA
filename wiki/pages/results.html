@@ -4,50 +4,49 @@
 {% block lead %}You can describe the results of your project and your future plans here.{% endblock %}
 
 {% block page_content %}
-
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+</head>
 <div class="row mt-4">
-  <div class="col-lg-5">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Clearly and objectively describe the results of your work.</li>
-      <li>Future plans for the project.</li>
-      <li>Considerations for replicating the experiments.</li>
-    </ul>
+  <div class="safety-hd">
+    <img src="static/results/results-hd.jpg" alt="">
   </div>
-  <div class="col-lg-7">
-    <h2>Describe what your results mean</h2>
-    <hr>
-    <ul>
-      <li>Interpretation of the results obtained during your project. Don't just show a plot/figure/graph/other, tell us what you think the data means. This is an important part of your project that the judges will look for.</li>
-      <li>Show data, but remember <b>all measurement and characterization data must also be on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</b> Otherwise these data will not be in consideration for any medals or part awards!</li>
-      <li>Consider including an analysis summary section to discuss what your results mean. Judges like to read what you think your data means, beyond all the data you have acquired during your project.</li>
-    </ul>
+
+    <h3>1. Plasmid construction</h3>
+    <p>We have designed the pET-Cas12a expression plasmid. To construct our plasmid, we let the company synthesise DNA fragments by inserting FnCas12 into the pET28a plasmid vector. The constructed plasmids were contained in E. coli strains, we streak inoculated them on LB liquid medium plates containing corresponding antibiotics and incubated them at 37℃ overnight (Figure 1).</p>
+  <div class="results-bd">
+    <img src="static/results/1.jpg" width="600px" height="600px" alt="">
+    <p>Figure 1. Incubation of plasmids containing strains. A. E. coli BL21 containing the pET28a plasmid. B. E. coli BL21 containing the pET28a plasmid. C. pET28a plasmid after single colony culture. D. pET28a plasmid after single colony culture
+    </p>
+    <h3>2. Purification of Cas12a protein and purified</h3>
+    <img src="static/results/2.png">
+    <p>Figure 2. Expression and purification of protein Cas12a. A. Incubation of Cas12a containing the pET28a plasmid. B. SDS-PAGE electrophoresis gels of Cas12a protein after IPTG induction at different concentrations.
+      The Cas12a protein has a size of 130kDa.SDS-PAGE electrophoresis results showed that Cas12a protein was present in our collected solution at 130 kDa. It was found that 1 mmol/l IPTG was the optimal induction concentration by experiment. Therefore, Cas12a protein was expressed and purified with high quality.
+      We tested the concentration of Cas12a protein by Bicinchoninic Acid Assay (BCA) using a SpectraMax i12x Multi-mode zymography with the absorption peak at 562 nm (Figure 3).
+    </p>
+    <img src="static/results/3.png">
+    <p>Figure 3. Standard linear regression line of BCA method used to calculate protein concentration. Absorbance and calculated protein concentration of Cas12a.
+      Through the curve values, we measured the absorbance of Cas12a as 0.2276 (L/(g.cm)) and the protein concentration (ug/ml) as 10.7549295, this result indicates that we obtained a sufficient concentration of Cas12a protein.
+    </p>
+    <img src="static/results/4.png">
+    <p>Figure 4. Electropherogram of the results of miRNA-initiated and HCR isothermal amplification reaction.lane 1： H1(1 µM)；lane 2： H2(1 µM)；lane 3：1 µM H1+ 1 µM H2； lane 4：1 µM H1+ 1 µM H2+ 50 nM miR； lane 5：1 µM H1+ 1 µM H2+ 100 nM miR； lane 6：1 µM H1+ 1 µM H2+ 200 nM miR； lane 7：1 µM H1+ 1 µM H2+ 500 nM miR-； lane 8：1 µM H1+ 1 µM H2+ 1000 nM miR
+    </p>
+    <p>Electrophoretic graph of the results of HCR isothermal amplification reaction triggered by miRNA, only H1 H2 cannot trigger the amplification reaction, but it can be triggered by the addition of miRNA and the shapes of the amplification bands triggered by different concentrations of miRNA are similar, and all of them show the results of trapezoidal bands, but the higher the concentration of miRNA, the faster the reaction speed.
+    </p>
+    <h3>3. Colour intensity and changes in different miRNA species</h3>
+    <img src="static/results/5.jpg">
+    <p>Figure 5 Specificity results of miRNA-initiated isothermal amplification reaction
+      As can be learnt from the figure, the method we have developed is characterized by high specificity. Different miRNAs can target different hairpin structures, thus triggering an amplification reaction, which occurs with a clear difference between the colour change and the blank as well as other kinds of miRNAs, demonstrating good method specificity.
+    </p>
+    <h4>4. Judgement of lateral chromatography test strips</h4>
+    <img src="static/results/6.png">
+    <p>Figure 6 Lateral chromatography test strip results. A. Negative. B. Positive. Negative: the T-line does not show any colour, which is classified as negative, indicating that the reporter molecule has not been cleaved by the Cas enzyme and the Cas enzyme has not been activated; Positive: the T-line shows colour, which is classified as positive, indicating that the nucleic acid probe has been cleaved by the Cas enzyme and the Cas enzyme has been activated.
+
+      This method uses lateral chromatography test strips with two bands, a lower quality control line and an upper detection line. Affinity agent (SA) is coated at the quality control line, sheep anti-mouse secondary antibody is coated at the detection line, and anti-FAM/FITC monoclonal antibody is labelled on colloidal gold. An intact reporter (labelled on both ends with Biotin and FAM/FITC) allows all of the colloidal gold to be captured at the QC line, but when a reporter is cut by the Cas enzyme, the colloidal gold that binds to the cut fragment is not captured by the QC line and forms the detection line. The presence or absence of the detection line determines whether the Cas enzyme is activated or not. In order to make our assay kits more user-friendly, we tested the isothermal amplification method for detecting miRNAs instead of the PCR amplification method. The experimental results showed that the specificity of our method was good and the detection results could be judged by the negative and positive test strips, indicating that the protocol of miRNA detection by amplification via the isothermal amplification method was feasible. This provides strong experimental data support for us to develop a portable detection kit.
+    </p>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Project Achievements</h2>
-    <hr>
-    <p>You can also include a list of bullet points (and links) of the successes and failures you have had over your summer. It is a quick reference page for the judges to see what you achieved during your summer.</p>
-    <ul>
-      <li>A list of linked bullet points of the successful results during your project</li>
-      <li>A list of linked bullet points of the unsuccessful results during your project. This is about being scientifically honest. If you worked on an area for a long time with no success, tell us so we know where you put your effort.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Results">2019 Newcastle</a></li>
-      <li><a href="https://2019.igem.org/Team:Munich/Results">2019 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Tec-Chihuahua/Results">2019 Tec Chihuahua</a></li>
-      <li><a href="https://2020.igem.org/Team:Aalto-Helsinki/Results">2020 Aalto Helsinki</a></li>
-      <li><a href="https://2020.igem.org/Team:GreatBay_SCIE/Results">2020 GreatBay SCIE</a></li>
-      <li><a href="https://2020.igem.org/Team:Queens_Canada/Results">2020 Queens Canada</a></li>
-    </ul>
-  </div>
-</div>
+
 
 {% endblock %}

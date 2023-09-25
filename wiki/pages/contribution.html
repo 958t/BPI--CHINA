@@ -4,16 +4,98 @@
 {% block lead %}Make a useful contribution for future iGEM teams. Use this page to document that contribution.{% endblock %}
 
 {% block page_content %}
-
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #4</h4>
-      <p>Make a useful contribution for future iGEM teams. Use this page to document that contribution.<p>
-      <p>If you are making a contribution by adding information to an existing Part or creating a new Part, you must document your contribution on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria. You can use this page to link to that part and include additional information about your contribution.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+<head>
+  <link href="{{ url_for('static', filename = 'a2.css') }}" rel="stylesheet">
+</head>
+<div class="row mt-4 contribution">
+  <div class="safety-hd">
+    <img src="static/contribution/contribution-hd.jpg" alt="">
+  </div>
+  <div class="contribution-bd">
+   <div class="overview">
+       <p>&nbsp;&nbsp;&nbsp;&nbsp;The BPI-iGEM team has always attached great importance to contributing to the iGEM community and especially to the future iGEM team. We are proud to continue this legacy.
+           During the development of the entrepreneurial component of our program, we contacted experts from several universities. There was Dr. Li Jishan, a professor at the State Key Laboratory of Chemical Bio-Sensing and Metrology. Jiang Jianhui, Hunan University. Deng Ting, who researches chemical and biosensing technologies. We met with them and explained the basics of iGEM and how to create and chair a high-performing and successful iGEM team. We will continue this interaction in November to guide them through the detailed process of building an iGEM team. Our goal is to reach out to other universities to provide information about the iGEM community and spread knowledge about synthetic biology.
+       </p>
+   </div>
+  <div class="overview">
+      <h3>Travel to the item community and enter team projects</h3>
+      <p>For research on methods of detection of myocardial infarction, the effects of miRNA on cardiomyocytes were investigated in the literature. In the literature, 220 kinds of human miRNA were investigated and expressed in heart tissue, and the main item was the expression of miR-133.
+          For example， in literature research， The inhibitory effect of miR-133 on cardiomyocyte apoptosis, the low expression of miR-133 in human and mouse cardiac hypertrophy models, and the high expression of miR-133 in vitro can inhibit cardiac hypertrophy. The expression of miR-133 in the animal model of myocardial infarction and its influence on cardiac function.  miRNA-133 is specifically expressed in the heart and plays an important regulatory role in cardiac development, myocardial apoptosis, and myocardial remodeling. miR-133 has an antiapoptotic effect. This experimental team provides new solutions and ideas for the detection of clinical myocardial infarction.
+          miRNA-22, and GRACE scores had a stronger discriminating power for MACE occurrence, with a sensitivity of 100.00% and a specificity of 79.40%. miRNA-22 were more sensitive and specific for the diagnosis of AMI, suggesting that they can be used as potential biomarkers for clinical diagnosis of AMI
+          Traditionally, myocardial infarction may start with chest pain, dyspnea, cold sweats, nausea, vomiting, fatigue, and other symptoms. Depending on the person, myocardial infarction may be asymptomatic or not. There are still many shortcomings in the detection method for the prevention of myocardial infarction. In view of this problem, a new method for the prevention and detection of myocardial infarction was created.
+      </p>
+  </div>
+    <div class="overview">
+        <h3>Objective of the experiment</h3>
+        <p>For our project, our goal is to develop a strip that can measure miRNA expression to predict heart attacks. By extracting total RNA from the blood, the strip can be used to detect whether the suspected patient has the possibility of developing myocardial infarction, so as to intervene early to improve the prognosis of patients.
+        </p>
+        <h3>Experimental methods</h3>
+        <p> Gene fragments with different hairpin structures were modified with colloidal gold, and different gene fragments were targeted to different minas. After binding with miRNA, an HCR isothermal amplification reaction was triggered. At the same time, the color reaction will take place by using the reverse cleavage function of CRISPR technology to complete the miRNA detection.
+        </p>
     </div>
+    <div class="overview">
+        <h3>The reverse cutting function of Cas12a</h3>
+        <p>Some miRNAs exhibit elevated levels in the blood compared with healthy people. These miRNA biomarkers are the "prey" of the CRISPR/Cas12a molecular system. The CRISPR/Cas12a system consists of Cas12a "predators" and specially designed crRNA "whistleblowers" that direct Cas12a to the HCR amplification product PAM site. Once the predator finds its "prey," the CRISPR/Cas12a system activates, cutting off nearby RNA molecules. Using the cutting activity of the Cas12a "molecular scissors," we added to the reaction the RNA reporter molecule "flashlight" that releases a fluorescent signal after cutting.
+            Thus, we output the "ON" effect for the system. miRNA biomarkers from blood samples of patients were utilized. In this case, the crRNA binds to the miRNA-triggered HCR amplification product, the Cas12a "predator" is activated, and the crRNA reporter gene "flashlight" emits a fluorescent signal.
+        </p>
+    </div>
+
+  <div class="overview">
+      <h3>The procedure of the experiment</h3>
+      <p>HCR reaction: h1 and h2 were dissolved, heated for two minutes, and cooled to room temperature for one hour, h1 and h2 were both 1μM, miRNA corresponding DNA strands of different concentrations were added, reaction at room temperature for 4h, 2% agarose gel electrophoresis was performed, and the results were observed.
+          The results confirmed the HCR reaction. With the increase in miRNA content, the tailing phenomenon became more and more obvious.
+      </p>
+  </div>
+      <div class="contribution-img">
+          <img src="static/contribution/1.png" alt="">
+      </div>
+
+      <div class="overview">
+          <h3> The expression of cas12a was verified</h3>
+          <p>Recombinant plasmid pET-Cas12a was transferred into the receptor state of strain BL21 to construct cas12a plasmid and purify cas12a. After the colony identification was correct, prokaryotic expression was performed.
+              After SDS-polyacrylamide gel electrophoresis, the result showed that Cas12a was expressed without and with an inducer.
+          </p>
+      </div>
+      <div class="contribution-img">
+      <img src="static/contribution/2.jpg" width="400px" height="300px" alt="">
+      <img src="static/contribution/3.jpg" width="400px" height="300px" alt="">
+      </div>
+      <h3>Experimental Results </h3>
+      <div class="contribution-img">
+      <img src="static/contribution/4.png" alt="">
+      </div>
+     <div class="overview">
+         <p>Negative: The T-line does not show color, indicating that the reporter molecule (reporter) is not cut by Cas enzyme, Cas enzyme is not activated;
+             Positive: The T line is visible to the naked eye, which is judged as positive, indicating that a nucleic acid probe is cut by Cas enzyme and Cas enzyme is activated;
+         </p>
+     </div>
+      <div class="contribution-img">
+      <img src="static/contribution/5.png" alt="">
+      </div>
+     <div class="overview">
+         <h3> Summarize the parts 	with 	new experiments</h3>
+         <p>CRISPER Cas12a nuclease (formerly Cpf1) function: Reverse cutting</p>
+         <p>CrRNA structure and sequence</p>
+         <p>BL21 (DE3) receptor cell function: Culture and purification of cas12a protein</p>
+         <p>IPTG function: induction acUV5 promoter   H1    H2</p>
+         <p>Reporter</p>
+         <p>MiRNA-133</p>
+         <p>MiRNA-499</p>
+         <p>MiRNA-22</p>
+         <p>MiRNA-21</p>
+         <p>MiRNA-155</p>
+     </div>
+<div class="overview">
+
+    <h3>Serving humans</h3>
+    <p>Could save billions of lives, save millions from heart attacks. It could provide important assistance in the early diagnosis and treatment of cardiovascular disease. The method can accurately detect the markers of myocardial infarction and help doctors to find the risk of cardiovascular disease in patients in time so that effective treatment measures can be taken to avoid further development of the disease. In addition, the operation is simple, low cost, and can be widely used in hospitals, community health stations, and other places, for the majority of patients to provide more convenient and efficient medical services. The research and development of this method have important practical significance and social value for promoting the early prevention and treatment of cardiovascular diseases and improving people's health levels.
+    </p>
+</div>
+      <div class="overview">
+          <h3>Pass the baton and provide a good start for the next team</h3>
+          <p> As is our tradition, throughout 2023 we are disseminating knowledge in various synthetic biology-related areas and introducing our projects and processes to assist in the establishment of the next iGEM team, which we will serve as a reference template for new teams to enter next year to continue the tradition of the iGEM community.
+          </p>
+      </div>
   </div>
 </div>
 

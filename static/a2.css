@@ -78,8 +78,6 @@
 
 .hp-hander-img {
     width: 100%;
-    height: 500px;
-    background-color: pink;
     margin-top: 10px;
 }
 
@@ -136,4 +134,147 @@ svg[data-v-1a213cba] {
 }
 .modal-dialog {
     max-width: 900px;
+}
+
+.mascot {
+    float: right;
+}
+.footer-right li {
+    display: inline-block;
+    float: right;
+}
+
+.modal-body img {
+    margin-bottom: 20px;
+}
+
+.page-header {
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+}
+
+.lunbotu1 {
+    overflow: hidden;
+}
+.home-text {
+    color: #3C3C3C;
+    font-size: 18px !important;
+    line-height: 30px;
+    margin: 0;
+    text-align: justify;
+}
+
+.home-text h2 {
+    text-align: center;
+}
+
+.shiyan {
+    width: 60%;
+    margin: 0 auto;
+}
+.home-vi {
+    margin: 0 auto;
+}
+
+.home-video video {
+    width: 60%;
+
+}
+
+.hone-video {
+    margin: 0 auto;
+}
+
+.home-text {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.safety-hd img {
+    width: 100%;
+}
+
+.sf-h2 {
+    text-align: center;
+}
+
+.safety-hd-img {
+    float: left;
+}
+.safety-hd-h4 {
+
+    float: left;
+}
+
+.safety-bd {
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.overview {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 40px 0;
+    border: 2px solid #a62420;
+}
+
+.laboratory-bd {
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.laboratory-img  li{
+    float: left;
+    list-style: none;
+}
+
+.laboratory-bd-p {
+    text-align: center;
+}
+
+
+.description-bd img {
+    float: left;
+}
+
+.description-bd h3 {
+    float: left;
+}
+
+.home-top {
+    margin-top: 50px;
+}
+
+.contribution-img  img{
+    margin: 0 auto;
+}
+
+.teamsafety .teamsafety-hd img {
+    float: left;
+}
+
+.teamsafety-hd h2 {
+    float: left;
+}
+
+.safety-hardware img {
+    float: left;
+}
+
+.safety-hardware h2 {
+    float: left;
+}
+
+.human img {
+    float: left;
+}
+
+.human h2 {
+    float: left;
+}
+
+.description-bd h2 {
+    margin-top: 10px;
 }
