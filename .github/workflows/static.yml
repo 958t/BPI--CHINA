@@ -5,7 +5,7 @@ on:
   push:
     branches: ["master"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the wiki tab
   workflow_dispatch:
 
 permissions:
@@ -25,9 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: wiki/checkout@v4
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: wiki/setup-python@v2
         with:
           python-version: 3.8
       - name: Install dependencies
@@ -38,12 +38,12 @@ jobs:
         run: |
           pip freeze > requirements.txt
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: wiki/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: wiki/upload-artifact@v2
         with:
           name: public
           path: public
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: wiki/deploy-pages@v3
