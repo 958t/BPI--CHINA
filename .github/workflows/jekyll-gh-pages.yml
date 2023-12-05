@@ -36,7 +36,7 @@ jobs:
           FLASK_APP=app.py flask freeze
         shell: bash
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+        uses: .github/workflows/s/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
